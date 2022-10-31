@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	html,
+	body {
+		@apply font-body font-medium selection:text-darkDark selection:bg-sky-400 bg-darkLight text-lightLight h-screen max-w-full;
+	}
+
+	.scroll::-webkit-scrollbar {
+		width: 6px; /* Tamaño del scroll en vertical */
+		height: 6px; /* Tamaño del scroll en horizontal */
+	}
+
+	.scroll::-webkit-scrollbar-thumb {
+		background-color: #16191b;
+	}
+
+	/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+	.scroll::-webkit-scrollbar-thumb:hover {
+		background-color: #16191b;
+	}
+
+	/* Cambiamos el fondo cuando esté en active */
+	.scroll::-webkit-scrollbar-thumb:active {
+		background-color: #16191b;
+	}
+
+	.scroll::-webkit-scrollbar-track {
+		background-color: #07090c;
+	}
+
+	/* Cambiamos el fondo cuando esté en active o hover */
+	.scroll::-webkit-scrollbar-track:hover,
+	.scroll::-webkit-scrollbar-track:active {
+		background-color: #07090c;
+	}
+
+	/* ! Tipos de letras - Tamaño */
+	.tinySize {
+		@apply text-xs sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-base;
+	}
+
+	.lowShortSize {
+		@apply text-sm sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-lg;
+	}
+
+	.shortSize {
+		@apply text-base sm:text-base md:text-lg lg:text-lg xl:text-xl 2xl:text-xl;
+	}
+
+	.lowMediumSize {
+		@apply text-lg sm:text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl;
+	}
+
+	.mediumSize {
+		@apply text-xl sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-3xl;
+	}
+
+	.lowLongSize {
+		@apply text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl;
+	}
+
+	.longSize {
+		@apply text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl;
+	}
+
+	.lowBigSize {
+		@apply text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl;
+	}
+
+	.bigSize {
+		@apply text-5xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-7xl;
+	}
+}
